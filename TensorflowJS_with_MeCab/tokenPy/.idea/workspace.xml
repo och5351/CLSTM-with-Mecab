@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11174498-753b-41c3-92bc-06812d9e02e5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chanhaeUtil/MyUtil.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chanhaeUtil/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CrawlingCategory/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CrawlingCategory/crawlingUtil.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CrawlingCategory/naverFinanceCr.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CrawlingCategory/naverScienceCr.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CrawlingCategory/naverSocialCr.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MainCrawling.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BagOfWords.py" beforeDir="false" afterPath="$PROJECT_DIR$/BagOfWords.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chanhaeUtil/MyUtil.py" beforeDir="false" afterPath="$PROJECT_DIR$/chanhaeUtil/MyUtil.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myTokenizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/myTokenizer.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +42,12 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\och5351\Desktop\github_och\Using-RNN-with-Tensorflow.js\TensorflowJS_with_MeCab\tokenPy\CrawlingCategory" />
+      <recent name="C:\Users\och5351\Desktop\github_och\Using-RNN-with-Tensorflow.js\TensorflowJS_with_MeCab\tokenPy" />
+    </key>
+  </component>
   <component name="RunManager" selected="Python.BagOfWords">
     <configuration name="BagOfWords" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="tokenPy" />
@@ -60,7 +71,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="myTokenizer" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="naverFinanceCr" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="tokenPy" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -73,7 +84,73 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/myTokenizer.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\och5351\Desktop\github_och\Using-RNN-with-Tensorflow.js\TensorflowJS_with_MeCab\tokenPy\CrawlingCategory\naverFinanceCr.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="naverFinanceCr" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="tokenPy" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/chanhaeUtil" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\och5351\Desktop\github_och\Using-RNN-with-Tensorflow.js\TensorflowJS_with_MeCab\tokenPy\CrawlingCategory\naverFinanceCr.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="naverScienceCr" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="tokenPy" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\och5351\Desktop\github_och\Using-RNN-with-Tensorflow.js\TensorflowJS_with_MeCab\tokenPy\CrawlingCategory\naverScienceCr.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="naverSocialCr" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="tokenPy" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\och5351\Desktop\github_och\Using-RNN-with-Tensorflow.js\TensorflowJS_with_MeCab\tokenPy\CrawlingCategory\naverSocialCr.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -85,7 +162,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.BagOfWords" />
-        <item itemvalue="Python.myTokenizer" />
+        <item itemvalue="Python.naverScienceCr" />
+        <item itemvalue="Python.naverSocialCr" />
+        <item itemvalue="Python.naverFinanceCr" />
+        <item itemvalue="Python.naverFinanceCr" />
       </list>
     </recent_temporary>
   </component>
@@ -104,7 +184,12 @@
       <workItem from="1583047060618" duration="88000" />
       <workItem from="1583047459944" duration="11000" />
       <workItem from="1583047807885" duration="396000" />
-      <workItem from="1583048540711" duration="740000" />
+      <workItem from="1583048540711" duration="842000" />
+      <workItem from="1583105316983" duration="28273000" />
+      <workItem from="1583164615448" duration="6361000" />
+      <workItem from="1583281156142" duration="22530000" />
+      <workItem from="1583369233271" duration="13725000" />
+      <workItem from="1583742826928" duration="3881000" />
     </task>
     <servers />
   </component>
@@ -112,26 +197,30 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583034879894">
+    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583105384866">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583034879894" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1583048987280">
+    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583105384866" />
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1583484600681">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583048987280" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1583048987280">
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1583484600681" />
+    <state width="1877" height="284" key="GridCell.Tab.0.bottom" timestamp="1583743820100">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583048987280" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1583048987280">
+    <state width="1877" height="284" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583743820100" />
+    <state width="1877" height="284" key="GridCell.Tab.0.center" timestamp="1583743820100">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583048987280" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1583048987280">
+    <state width="1877" height="284" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583743820100" />
+    <state width="1877" height="284" key="GridCell.Tab.0.left" timestamp="1583743820100">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583048987280" />
+    <state width="1877" height="284" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583743820100" />
+    <state width="1877" height="284" key="GridCell.Tab.0.right" timestamp="1583743820100">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="284" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583743820100" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1582884908647">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -152,17 +241,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="161" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1582863485826" />
-    <state x="652" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1583047809569">
+    <state x="652" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1583281156332">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="652" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583047809569" />
+    <state x="652" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583281156332" />
     <state x="623" y="225" key="search.everywhere.popup" timestamp="1583046839058">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="623" y="225" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1583046839058" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/tokenPy$naverFinaceCr.coverage" NAME="naverFinaceCr Coverage Results" MODIFIED="1583481101492" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chanhaeUtil" />
     <SUITE FILE_PATH="coverage/tokenPy$myTokenizer.coverage" NAME="myTokenizer Coverage Results" MODIFIED="1583046928856" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/tokenPy$BagOfWords.coverage" NAME="BagOfWords Coverage Results" MODIFIED="1583048987280" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/tokenPy$naverFinaceCr__1_.coverage" NAME="naverFinaceCr (1) Coverage Results" MODIFIED="1583482123269" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/tokenPy$naverScienceCr.coverage" NAME="naverScienceCr Coverage Results" MODIFIED="1583743609545" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/tokenPy$BagOfWords.coverage" NAME="BagOfWords Coverage Results" MODIFIED="1583743820095" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/tokenPy$cr.coverage" NAME="cr Coverage Results" MODIFIED="1583133591417" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chanhaeUtil" />
+    <SUITE FILE_PATH="coverage/tokenPy$naverSocialCr.coverage" NAME="naverSocialCr Coverage Results" MODIFIED="1583482401505" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

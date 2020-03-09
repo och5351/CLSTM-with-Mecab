@@ -1,4 +1,4 @@
-#from eunjeon import Mecab
+from eunjeon import Mecab
 from tensorflow.keras.preprocessing.text import text_to_word_sequence
 from tensorflow.keras.preprocessing.text import Tokenizer
 import tensorflow as tf
