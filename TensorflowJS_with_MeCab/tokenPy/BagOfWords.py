@@ -14,25 +14,25 @@ tf.random.set_seed(1234)
 m = Mecab()
 util = MyUtil()
 # 기사 수
-documentCount = 8700
-resultDocumentCount = 2172
+documentCount = 900
+resultDocumentCount = 300
 
 # 정답 데이터 작성
 y_class = np.arange(documentCount)
-for i in range(2900):
+for i in range(300):
     y_class[i] = 0
-for i in range(2900):
-    y_class[i+2900] = 1
-for i in range(2900):
-    y_class[i+5800] = 2
+for i in range(300):
+    y_class[i+300] = 1
+for i in range(300):
+    y_class[i+600] = 2
 
 y_test = np.arange(resultDocumentCount)
-for i in range(724):
+for i in range(100):
     y_test[i] = 0
-for i in range(724):
-    y_test[i+724] = 1
-for i in range(724):
-    y_test[i+1448] = 2
+for i in range(100):
+    y_test[i+100] = 1
+for i in range(100):
+    y_test[i+200] = 2
 
 y_class = tf.keras.utils.to_categorical(y_class)
 y_test = tf.keras.utils.to_categorical(y_test)
@@ -45,14 +45,16 @@ contentsText = ''
 articleMemory = []
 resultArticleMemory = []
 
+
+
 # 기사 불러오기
 for i in range(documentCount):
-    if i < 2900:
+    if i < 300:
         f = open("Finance/Finance%05d.txt" % i, 'r', -1, "utf-8")
-    elif i < 5800:
-        f = open("Social/Social%05d.txt" % (i-2900), 'r', -1, "utf-8")
+    elif i < 600:
+        f = open("Social/Social%05d.txt" % (i-300), 'r', -1, "utf-8")
     else:
-        f = open("Science/Science%05d.txt" % (i-5800), 'r', -1, "utf-8")
+        f = open("Science/Science%05d.txt" % (i-600), 'r', -1, "utf-8")
     data = f.read()
     f.close()
 
@@ -77,16 +79,17 @@ articleMemory = []
 
 # 기사 불러오기
 for i in range(resultDocumentCount):
-    if i < 724:
-        f = open("Finance/Finance%05d.txt" % (i + 2900), 'r', -1, "utf-8")
-    elif i < 1448:
-        f = open("Social/Social%05d.txt" % (i + 2900 - 724), 'r', -1, "utf-8")
+    if i < 100:
+        f = open("Finance/Finance%05d.txt" % (i + 300), 'r', -1, "utf-8")
+    elif i < 200:
+        f = open("Social/Social%05d.txt" % (i + 300 - 100), 'r', -1, "utf-8")
     else:
-        f = open("Science/Science%05d.txt" % (i + 2900 - 1448), 'r', -1, "utf-8")
+        f = open("Science/Science%05d.txt" % (i + 300 - 200), 'r', -1, "utf-8")
     data = f.read()
     f.close()
 
     data = data[139:]
+
     contentsText += data
     data = re.sub("[-=+,#/\?:%$.@*\"※~&%!\\'|\(\)\[\]\<\>`\'\\\\n\\\\t{}◀▶▲☞“”ⓒ◇]", "", data)
     data = m.morphs(data)

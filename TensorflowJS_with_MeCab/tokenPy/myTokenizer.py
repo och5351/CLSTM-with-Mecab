@@ -1,6 +1,8 @@
 from eunjeon import Mecab
 from tensorflow.keras.preprocessing.text import text_to_word_sequence
 from tensorflow.keras.preprocessing.text import Tokenizer
+from tensorflow.keras.preprocessing.sequence import pad_sequences
+import numpy as np
 import tensorflow as tf
 
 
@@ -9,12 +11,17 @@ docs = ['먼저 텍스트의 각 단어를 나누어 토큰화합니다.',
         '토큰화한 결과는 딥러닝에서 사용할 수 있습니다.']
 
 m = Mecab()
+x = m.morphs('제가이렇게띄어쓰기를전혀하지않고글을썼다고하더라도글을이해할수있습니다.')
+x = [' '.join(x),'xxx','zzz','gasdgasdg']
+x = np.array(x)
+print(x)
 print('[MeCab 형태소 분석기]')
 print(m.morphs('제가이렇게띄어쓰기를전혀하지않고글을썼다고하더라도글을이해할수있습니다.'))
 print('[Keras 문장 단어 분석기]')
 print(text_to_word_sequence('제가이렇게띄어쓰기를전혀하지않고글을썼다고하더라도글을이해할수있습니다.'))
 token = Tokenizer()
-token.fit_on_texts('제가이렇게띄어쓰기를전혀하지않고글을썼다고하더라도글을이해할수있습니다.')
+token.fit_on_texts(x)
+
 print("[몇개의 단어]")
 print(token.word_counts) # 몇개의 단어가 나오는지
 print("[몇개의 문장]")
@@ -23,6 +30,14 @@ print("[각 단어들이 몇 개의 문장에 나오는가]")
 print(token.word_docs) # 각 단어들이 몇 개의 문장에 나오는가
 print("[각 단어에 매겨진 인덱스 값]")
 print(token.word_index) # 각 단어에 매겨진 인덱스 값
+word_size = len(token.word_index) + 1
+print("[문장 토큰화]")
+print(token.texts_to_sequences(x))
+tempX = token.texts_to_sequences(x)
+padded_x = pad_sequences(tempX)
+print(padded_x)
+
+
 
 '''
 print("[원 핫 인코딩]")

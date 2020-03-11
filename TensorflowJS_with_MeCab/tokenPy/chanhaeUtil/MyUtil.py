@@ -1,6 +1,7 @@
 import numpy as np
 import re
 from eunjeon import Mecab
+import random
 
 class MyUtil:
     m = Mecab()
@@ -37,33 +38,6 @@ class MyUtil:
         word2index = {}
         bow = []
         temp = []
-        '''
-        if type(token) == list:
-            count = 1
-            for listCount in range(len(token)):
-                vocaCount = 0
-                for voca in token[listCount]:
-                    if voca not in word2index.keys():
-                        word2index[voca] = count
-                        # token을 읽으면서, word2index에 없는 (not in) 단어는 새로 추가하고, 이미 있는 단어는 넘깁니다.
-                        bow.insert(len(word2index) - 1, 1)
-                        # BoW 전체에 전부 기본값 1을 넣어줍니다. 단어의 개수는 최소 1개 이상이기 때문입니다.
-                        temp.append(count)
-                        count += 1
-                    else:
-                        index = word2index.get(voca)
-                        # 재등장하는 단어의 인덱스를 받아옵니다.
-                        bow[index] = bow[index] + 1
-                        # 재등장한 단어는 해당하는 인덱스의 위치에 1을 더해줍니다. (단어의 개수를 세는 것입니다.)
-                    if vocaCount + 1 == len(token[listCount]):
-                        texts_to_sequences.append(temp)
-                        temp = []
-                        vocaCount = 0
-                    else:
-                        vocaCount += 1
-        else:
-        '''
-
 
         for voca in token:
             if voca not in word2index.keys():
@@ -80,21 +54,15 @@ class MyUtil:
         return word2index, bow
 
     # 스탑워드 적용
-    def stopWord(self, wordDic, bow, deleteRate = 0.03):
-        #반복 주기 선정
-        repeatFrequency = int(len(bow) * deleteRate)
+    def stopWord(self, wordList, stopwordsList):
 
-        for count in range(repeatFrequency):
-            # BagOfWord 최대값 찾기
-            maxBow = bow.index(max(bow))
-            # wordDic 제일 많이 나온 단어 키 찾기
-            maxDic = list(wordDic.keys())[maxBow]
-            # wordDic StopWord 적용
-            del wordDic[maxDic]
-            # bow StopWord 적용
-            del bow[maxBow]
+        for count in range(len(wordList)):
+            if len(wordList) <= count:
+                return wordList
+            if stopwordsList.__contains__(wordList[count]):
+                del wordList[count]
 
-        return wordDic, bow
+        return wordList
 
 
     def tf_idf(self, articleMemory, articleCount, words):
@@ -150,3 +118,17 @@ class MyUtil:
             print("예측 값 ")
             if i % 100 == 0:
                 print("epoch = %.f error = %.f" % (i, error))
+
+    def randomBox(self, x, y, randomFrequence):
+
+        for count in range(randomFrequence):
+            shake1 = random.randrange(0, len(x))
+            shake2 = random.randrange(0, len(x))
+            temp = x[shake1]
+            x[shake1] = x[shake2]
+            x[shake2] = temp
+            temp = y[shake1]
+            y[shake1] = y[shake2]
+            y[shake2] = temp
+
+        return x, y
