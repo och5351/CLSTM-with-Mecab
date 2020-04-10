@@ -1,4 +1,4 @@
-<h1 align="center">Using-RNN-with-Tensorflow.js</h1>
+<h1 align="center">Using-CLSTM-with-Tensorflow.js</h1>
 <p align="center">with MeCab</p>
 <br><br>
 
