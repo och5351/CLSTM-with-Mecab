@@ -17,7 +17,7 @@ Design
 CNN
 ---
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/45858414/79000128-056c3380-7b87-11ea-95d9-eda0945b0046.PNG" width="80">
+    <img src="https://user-images.githubusercontent.com/45858414/79000128-056c3380-7b87-11ea-95d9-eda0945b0046.PNG" width="80%">
 </p>
 
 LSTM
