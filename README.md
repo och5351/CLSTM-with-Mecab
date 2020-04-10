@@ -31,9 +31,10 @@ Progress
 
 Deep Learning just python(I will change it to tensorflow.js).
 
-     1. Morphological Analyzing(Mecab)
-     2. StopWords
-     3. Word2Vec
-     4. Convolutional Layer
-     5. Maxpooling
-     6. Recurrent Neural Networks(Long Short-Term Memory models)
+     1. Crawling text(https://github.com/och5351/Web_Crawler-news-)
+     2. Morphological Analyzing(Mecab)
+     3. StopWords
+     4. Word2Vec
+     5. Convolutional Layer
+     6. Maxpooling
+     7. Recurrent Neural Networks(Long Short-Term Memory models)
