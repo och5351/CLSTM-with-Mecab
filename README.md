@@ -27,6 +27,12 @@ LSTM
 </p>
 Progress
 ---
+
 Deep Learning just python(I will change it to tensorflow.js).
 
-     - Morphological Analyzing(Mecab)
+     1. Morphological Analyzing(Mecab)
+     2. StopWords
+     3. Word2Vec
+     4. Convolutional Layer
+     5. Maxpooling
+     6. Recurrent Neural Networks(Long Short-Term Memory models)
