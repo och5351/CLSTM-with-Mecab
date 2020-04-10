@@ -25,6 +25,7 @@ LSTM
 <p align="center">
     <img src="https://user-images.githubusercontent.com/45858414/78999018-bc1ae480-7b84-11ea-932c-ab94b07cf201.PNG" width="80%">
 </p>
+
 Progress
 ---
 
